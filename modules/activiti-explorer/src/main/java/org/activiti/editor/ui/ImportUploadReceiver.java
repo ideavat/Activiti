@@ -87,12 +87,12 @@ public class ImportUploadReceiver implements Receiver, FinishedListener, ModelDa
       try {
         if (fileName.endsWith(".bpmn20.xml") || fileName.endsWith(".bpmn")) {
           validFile = true;
-          BpmnXMLConverter xmlConverter = new BpmnXMLConverter();
+//          BpmnXMLConverter xmlConverter = new BpmnXMLConverter();
           XMLInputFactory xif = XMLInputFactory.newInstance();
           InputStreamReader in = new InputStreamReader(new ByteArrayInputStream(outputStream.toByteArray()), "UTF-8");
           XMLStreamReader xtr = xif.createXMLStreamReader(in);
           BpmnModel bpmnModel = new BpmnXMLConverter().convertToBpmnModel(xtr);
-          xmlConverter.convertToBpmnModel(xtr);
+//          xmlConverter.convertToBpmnModel(xtr);
           
           if (bpmnModel.getMainProcess() == null || bpmnModel.getMainProcess().getId() == null) {
             notificationManager.showErrorNotification(Messages.MODEL_IMPORT_FAILED, 

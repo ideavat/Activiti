@@ -1567,5 +1567,6 @@
 	<xsd:element name="hoojookUserTask" type="tUserTask" substitutionGroup="flowElement"/>
 	<xsd:element name="excelDataSourceTask" type="tServiceTask" substitutionGroup="flowElement"/>
 	<xsd:element name="dataCleansingTask" type="tServiceTask" substitutionGroup="flowElement"/>
+	<xsd:element name="listDataSourceTask" type="tServiceTask" substitutionGroup="flowElement"/>
 
 </xsd:schema>

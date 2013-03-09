@@ -1568,5 +1568,6 @@
 	<xsd:element name="excelDataSourceTask" type="tServiceTask" substitutionGroup="flowElement"/>
 	<xsd:element name="dataCleansingTask" type="tServiceTask" substitutionGroup="flowElement"/>
 	<xsd:element name="listDataSourceTask" type="tServiceTask" substitutionGroup="flowElement"/>
+	<xsd:element name="twitterLeadGeneratorTask" type="tServiceTask" substitutionGroup="flowElement"/>
 
 </xsd:schema>

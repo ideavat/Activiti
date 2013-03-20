@@ -1559,16 +1559,4 @@
 		</xsd:complexContent>
 	</xsd:complexType>
 
-
-	<xsd:element name="leadCommunicatorTask" type="tServiceTask" substitutionGroup="flowElement"/>
-	<xsd:element name="leadDataSourceTask" type="tServiceTask" substitutionGroup="flowElement"/>
-	<xsd:element name="leadQualityImproverTask" type="tServiceTask" substitutionGroup="flowElement"/>
-	<xsd:element name="thirdPartyLeadSourceTask" type="tServiceTask" substitutionGroup="flowElement"/>
-	<xsd:element name="hoojookUserTask" type="tUserTask" substitutionGroup="flowElement"/>
-	<xsd:element name="excelDataSourceTask" type="tServiceTask" substitutionGroup="flowElement"/>
-	<xsd:element name="dataCleansingTask" type="tServiceTask" substitutionGroup="flowElement"/>
-	<xsd:element name="listDataSourceTask" type="tServiceTask" substitutionGroup="flowElement"/>
-	<xsd:element name="twitterLeadGeneratorTask" type="tServiceTask" substitutionGroup="flowElement"/>
-	<xsd:element name="campaignStatusTask" type="tServiceTask" substitutionGroup="flowElement"/>
-
 </xsd:schema>

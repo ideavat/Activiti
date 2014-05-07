@@ -59,7 +59,12 @@ public class TimerEntity extends JobEntity {
   @Override
   public void execute(CommandContext commandContext) {
 
-    super.execute(commandContext);
+   // Handled Exception by Hemant Kumar on 05-05-2012 for handling continuous errors leading to server crash on start up.
+   try {
+     super.execute(commandContext);
+   } catch (Exception e) {
+       log.error("Error in super.execute(commandContext)", e);
+   }
 
     if (repeat == null) {
 

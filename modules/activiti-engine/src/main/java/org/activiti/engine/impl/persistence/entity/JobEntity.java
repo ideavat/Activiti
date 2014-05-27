@@ -39,7 +39,7 @@ import org.activiti.engine.runtime.Job;
 public abstract class JobEntity implements Serializable, Job, PersistentObject, HasRevision {
 
   public static final boolean DEFAULT_EXCLUSIVE = true;
-  public static final int DEFAULT_RETRIES = 3;
+  public static final int DEFAULT_RETRIES = 1;
   private static final int MAX_EXCEPTION_MESSAGE_LENGTH = 255;
 
   private static final long serialVersionUID = 1L;

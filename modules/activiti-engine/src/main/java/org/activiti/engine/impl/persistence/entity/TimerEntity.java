@@ -59,7 +59,11 @@ public class TimerEntity extends JobEntity {
   @Override
   public void execute(CommandContext commandContext) {
 
+   try {
     super.execute(commandContext);
+   } catch (Exception e) {
+       System.out.println("Skipping Activiti Error : " + e.getMessage());
+   }
 
     if (repeat == null) {
 
